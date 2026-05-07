@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "b48b5484-9c8d-44a6-9782-c30a5e0ee6c1",
+    "name": "Gaming Laptop",
+    "price": 2000000
+  },
+  {
+    "id": "9879d23f-2b57-4283-9c0f-6a6411d8282d",
+    "name": "Laptop",
+    "price": 800000
+  }
+]
