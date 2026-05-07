@@ -466,8 +466,8 @@ curl -X DELETE http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440
 _Junior Fullstack Software Engineer_
 
 [![GitHub](https://img.shields.io/badge/GitHub-elyse502-181717?logo=github&logoColor=white)](https://github.com/elyse502)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Elysée_Niyibizi-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/niyibizi-elysée)
-[![Email](https://img.shields.io/badge/Email-elysee@example.com-D14836?logo=gmail&logoColor=white)](mailto:elyseniyibizi502@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Elysée_NIYIBIZI-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/niyibizi-elysée)
+[![Email](https://img.shields.io/badge/Email-elyseniyibizi502@gmail.com-D14836?logo=gmail&logoColor=white)](mailto:elyseniyibizi502@gmail.com)
 
 ---
 
