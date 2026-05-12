@@ -1,19 +1,22 @@
 <div align="center">
 
-# 🚀 _CRUD API with Express & TypeScript_ 🛜
+# 🚀 _CRUD API with Express, TypeScript & EJS_ 🛜
 
-A production-ready RESTful CRUD API built with Node.js, Express, TypeScript, and JSON file storage.
+A production-ready full-stack CRUD application with server-side rendering, RESTful API, and beautiful UI
 
 ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?style=for-the-badge&logo=node.js&logoColor=white)
 ![Express.js](https://img.shields.io/badge/Express.js-4.x-000000?style=for-the-badge&logo=express&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![EJS](https://img.shields.io/badge/EJS-View_Engine-B4CA65?style=for-the-badge&logo=ejs&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-CDN-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-### **Built with clean architecture:**
+### **Built with modern web technologies:**
 
-![UUID](https://img.shields.io/badge/UUID-Generator-FF6B6B?style=flat-square&logo=javascript&logoColor=white)
-![File System](https://img.shields.io/badge/File_System-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![REST API](https://img.shields.io/badge/REST-API-00C7B7?style=flat-square&logo=fastapi&logoColor=white)
+![UUID](https://img.shields.io/badge/UUID-Generator-FF6B6B?style=flat-square&logo=javascript&logoColor=white)
+![Method Override](https://img.shields.io/badge/Method_Override-HTTP-FFA500?style=flat-square&logo=html5&logoColor=white)
+![File System](https://img.shields.io/badge/File_System-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 
 </div>
 
@@ -21,59 +24,39 @@ A production-ready RESTful CRUD API built with Node.js, Express, TypeScript, and
 
 ## 📋 Table of Contents
 
-- [🚀 _CRUD API with Express \& TypeScript_ 🛜](#-crud-api-with-express--typescript-)
-  - [**Built with clean architecture:**](#built-with-clean-architecture)
-  - [📋 Table of Contents](#-table-of-contents)
-  - [✨ Features](#-features)
-  - [🛠️ Tech Stack](#️-tech-stack)
-  - [🏗️ Architecture](#️-architecture)
-  - [📁 Project Structure](#-project-structure)
-  - [⚙️ Installation \& Setup](#️-installation--setup)
-    - [Prerequisites](#prerequisites)
-    - [Quick Start](#quick-start)
-    - [Environment Variables (Optional)](#environment-variables-optional)
-  - [🚀 Running the Project](#-running-the-project)
-    - [Development Mode (with auto-reload)](#development-mode-with-auto-reload)
-    - [Build for Production](#build-for-production)
-    - [Run Production Build](#run-production-build)
-  - [📡 API Endpoints](#-api-endpoints)
-    - [📥 GET All Items](#-get-all-items)
-      - [Response (200 OK)](#response-200-ok)
-    - [📤 POST Create Item](#-post-create-item)
-      - [Request Body](#request-body)
-      - [Response (201 Created)](#response-201-created)
-    - [📝 PUT Update Item](#-put-update-item)
-      - [Request Body](#request-body-1)
-      - [Response (200 OK)](#response-200-ok-1)
-      - [Error Response (404 Not Found)](#error-response-404-not-found)
-    - [🗑️ DELETE Remove Item](#️-delete-remove-item)
-      - [Response (200 OK)](#response-200-ok-2)
-      - [Error Response (404 Not Found)](#error-response-404-not-found-1)
-  - [📊 HTTP Status Codes](#-http-status-codes)
-  - [🧹 Separation of Concerns](#-separation-of-concerns)
-    - [Benefits of this architecture:](#benefits-of-this-architecture)
-  - [📦 NPM Scripts](#-npm-scripts)
-  - [🧪 Testing with Postman](#-testing-with-postman)
-    - [Example cURL Commands](#example-curl-commands)
-  - [🔮 Future Enhancements](#-future-enhancements)
-  - [👨‍💻 Author](#-author)
-  - [📄 License](#-license)
-    - [⭐ Star this repository if you find it helpful for learning backend development!](#-star-this-repository-if-you-find-it-helpful-for-learning-backend-development)
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🏗️ System Architecture](#️-system-architecture)
+- [📁 Project Structure](#-project-structure)
+- [🎨 UI Pages & Routes](#-ui-pages--routes)
+- [⚙️ Installation & Setup](#️-installation--setup)
+- [🚀 Running the Project](#-running-the-project)
+- [📡 REST API Endpoints](#-rest-api-endpoints)
+- [🌐 Web Interface](#-web-interface)
+- [🧪 Testing Guide](#-testing-guide)
+- [📊 HTTP Status Codes](#-http-status-codes)
+- [🎯 Key Implementation Details](#-key-implementation-details)
+- [🔮 Future Roadmap](#-future-roadmap)
+- [👨‍💻 Author](#-author)
+- [📄 License](#-license)
 
 ---
 
 ## ✨ Features
 
-| Category             | Features                                  |
-| -------------------- | ----------------------------------------- |
-| **CRUD Operations**  | Create, Read, Update, Delete items        |
-| **Data Persistence** | JSON file storage using Node.js FS module |
-| **Type Safety**      | Full TypeScript support throughout        |
-| **Architecture**     | Separation of concerns (MVC-like pattern) |
-| **ID Generation**    | UUID-based unique identifiers             |
-| **Error Handling**   | Proper HTTP status codes                  |
-| **Validation**       | Request body validation                   |
-| **Scalability**      | Modular structure for easy expansion      |
+| Category              | Features                                            | Status |
+| --------------------- | --------------------------------------------------- | ------ |
+| **REST API**          | Full CRUD operations (Create, Read, Update, Delete) | ✅     |
+| **Web UI**            | Server-rendered dashboard with EJS templates        | ✅     |
+| **Forms**             | Create and edit items with intuitive forms          | ✅     |
+| **HTTP Methods**      | PUT & DELETE support via method-override            | ✅     |
+| **Styling**           | Tailwind CSS with Outfit font for modern UI         | ✅     |
+| **Persistence**       | JSON file storage using Node.js `fs` module         | ✅     |
+| **Type Safety**       | Full TypeScript implementation                      | ✅     |
+| **Architecture**      | Clean separation of concerns (MVC pattern)          | ✅     |
+| **ID Generation**     | UUID-based unique identifiers                       | ✅     |
+| **Responsive Design** | Mobile-friendly dashboard                           | ✅     |
+| **Error Handling**    | Proper error messages and status codes              | ✅     |
 
 ---
 
@@ -81,79 +64,107 @@ A production-ready RESTful CRUD API built with Node.js, Express, TypeScript, and
 
 <div align="center">
 
-| Technology     | Version  | Purpose             | Badge                                                                                             |
-| -------------- | -------- | ------------------- | ------------------------------------------------------------------------------------------------- |
-| **Node.js**    | 18+      | Runtime Environment | ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)        |
-| **Express.js** | 4.x      | Web Framework       | ![Express](https://img.shields.io/badge/Express.js-4.x-000000?logo=express&logoColor=white)       |
-| **TypeScript** | 5.x      | Type Safety         | ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white) |
-| **UUID**       | 9.x      | ID Generation       | ![UUID](https://img.shields.io/badge/UUID-9.x-FF6B6B?logo=javascript&logoColor=white)             |
-| **FS Module**  | Built-in | File Operations     | ![FS](https://img.shields.io/badge/File_System-Built_in-339933?logo=node.js&logoColor=white)      |
+| Technology          | Version | Purpose               | Badge                                                                                             |
+| ------------------- | ------- | --------------------- | ------------------------------------------------------------------------------------------------- |
+| **Node.js**         | 18+     | JavaScript Runtime    | ![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)        |
+| **Express.js**      | 4.x     | Web Framework         | ![Express](https://img.shields.io/badge/Express.js-4.x-000000?logo=express&logoColor=white)       |
+| **TypeScript**      | 5.x     | Type Safety           | ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white) |
+| **EJS**             | 3.x     | Template Engine       | ![EJS](https://img.shields.io/badge/EJS-3.x-B4CA65?logo=ejs&logoColor=black)                      |
+| **Tailwind CSS**    | CDN     | Utility-first CSS     | ![Tailwind](https://img.shields.io/badge/Tailwind-CDN-06B6D4?logo=tailwindcss&logoColor=white)    |
+| **UUID**            | 9.x     | ID Generation         | ![UUID](https://img.shields.io/badge/UUID-9.x-FF6B6B?logo=javascript&logoColor=white)             |
+| **Method Override** | 3.x     | HTTP Method Tunneling | ![Method Override](https://img.shields.io/badge/Method_Override-3.x-FFA500)                       |
 
 </div>
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ System Architecture
 
-The project follows a **clean layered architecture** with clear separation of concerns:
+The application follows a **clean layered architecture** with clear separation between API and UI concerns:
 
 ```
-┌─────────────────────────────────────────────────────┐
-│                    Client Request                    │
-└──────────────────────┬──────────────────────────────┘
-                       ↓
-┌─────────────────────────────────────────────────────┐
-│                    Routes Layer                      │
-│         (API endpoint definitions)                   │
-└──────────────────────┬──────────────────────────────┘
-                       ↓
-┌─────────────────────────────────────────────────────┐
-│                  Controllers Layer                   │
-│      (Request/Response handling & validation)        │
-└──────────────────────┬──────────────────────────────┘
-                       ↓
-┌─────────────────────────────────────────────────────┐
-│                   Services Layer                     │
-│          (Business logic & data operations)          │
-└──────────────────────┬──────────────────────────────┘
-                       ↓
-┌─────────────────────────────────────────────────────┐
-│                    Utils Layer                       │
-│        (File system operations & helpers)            │
-└──────────────────────┬──────────────────────────────┘
-                       ↓
-┌─────────────────────────────────────────────────────┐
-│                   data.json                          │
-│                 (Persistent storage)                 │
-└─────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│                         Client Browser                          │
+│                    (Web UI or API Client)                       │
+└────────────┬────────────────────────────┬──────────────────────┘
+             │                            │
+             ↓                            ↓
+    ┌────────────────┐           ┌────────────────┐
+    │   Web Routes   │           │   API Routes   │
+    │  (view.routes) │           │ (item.routes)  │
+    └────────┬───────┘           └────────┬───────┘
+             │                            │
+             ↓                            ↓
+    ┌────────────────┐           ┌────────────────┐
+    │ View Controller│           │Item Controller │
+    │ (render pages) │           │ (handle API)   │
+    └────────┬───────┘           └────────┬───────┘
+             │                            │
+             └────────────┬───────────────┘
+                          ↓
+                 ┌────────────────┐
+                 │Item Service    │
+                 │(business logic)│
+                 └────────┬───────┘
+                          ↓
+                 ┌────────────────┐
+                 │File Handler    │
+                 │(JSON storage)  │
+                 └────────┬───────┘
+                          ↓
+                 ┌────────────────┐
+                 │   data.json    │
+                 │(persistence)   │
+                 └────────────────┘
 ```
+
+### Component Responsibilities:
+
+| Layer           | Responsibility                          | Files                                      |
+| --------------- | --------------------------------------- | ------------------------------------------ |
+| **Routes**      | Define endpoints and HTTP methods       | `item.routes.ts`, `view.routes.ts`         |
+| **Controllers** | Handle requests/responses, render views | `item.controller.ts`, `view.controller.ts` |
+| **Services**    | Business logic and CRUD operations      | `item.service.ts`                          |
+| **Utils**       | Reusable helpers (file operations)      | `fileHandler.ts`                           |
+| **Views**       | Server-side rendered pages              | `*.ejs` files                              |
+| **Types**       | TypeScript interfaces                   | `item.types.ts`                            |
 
 ---
 
 ## 📁 Project Structure
 
-```console
-crud-api/
+```
+crud-exercise/
 │
 ├── 📁 src/
 │   │
 │   ├── 📁 controllers/
-│   │   └── 📄 item.controller.ts      # Request handlers & responses
+│   │   ├── 📄 item.controller.ts      # API request handlers
+│   │   └── 📄 view.controller.ts      # Web page renderers
 │   │
 │   ├── 📁 routes/
-│   │   └── 📄 item.routes.ts          # API endpoint definitions
+│   │   ├── 📄 item.routes.ts          # REST API endpoints
+│   │   └── 📄 view.routes.ts          # Web page routes
 │   │
 │   ├── 📁 services/
-│   │   └── 📄 item.service.ts         # Business logic & CRUD operations
+│   │   └── 📄 item.service.ts         # Business logic & CRUD
 │   │
 │   ├── 📁 utils/
-│   │   └── 📄 fileHandler.ts          # JSON file read/write operations
+│   │   └── 📄 fileHandler.ts          # JSON file operations
 │   │
 │   ├── 📁 types/
-│   │   └── 📄 item.types.ts           # TypeScript interfaces & types
+│   │   └── 📄 item.types.ts           # TypeScript interfaces
+│   │
+│   ├── 📁 views/
+│   │   ├── 📁 partials/
+│   │   │   ├── 📄 header.ejs          # Shared navigation bar
+│   │   │   └── 📄 footer.ejs          # Shared footer
+│   │   ├── 📄 index.ejs               # Dashboard homepage
+│   │   ├── 📄 create.ejs              # Create item form
+│   │   └── 📄 edit.ejs                # Edit item form
 │   │
 │   ├── 📁 data/
-│   │   └── 📄 data.json               # Persistent data storage
+│   │   └── 📄 data.json               # Persistent storage
 │   │
 │   └── 📄 server.ts                   # Application entry point
 │
@@ -165,16 +176,40 @@ crud-api/
 
 ---
 
+## 🎨 UI Pages & Routes
+
+### Web Interface Pages
+
+| Route       | Page        | Description          | Features                    |
+| ----------- | ----------- | -------------------- | --------------------------- |
+| `/`         | Dashboard   | List all items       | View, Edit, Delete buttons  |
+| `/create`   | Create Form | Add new item         | Input validation, POST form |
+| `/edit/:id` | Edit Form   | Update existing item | Pre-filled values, PUT form |
+
+### UI Components
+
+- 🎨 **Responsive Dashboard** - Clean card-based layout
+- 📝 **Create Form** - Intuitive input fields
+- ✏️ **Edit Form** - Auto-populated with existing data
+- 🗑️ **Delete Button** - With confirmation dialog
+- 📋 **Shared Partials** - Consistent header/footer
+- 🎯 **Tailwind Styling** - Modern, responsive design
+- 🔤 **Outfit Font** - Clean typography
+- ⚡ **Dynamic Copyright** - Auto-updating year
+
+---
+
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
 
 - **Node.js** (v18 or higher)
 - **npm** or **yarn** package manager
+- **Git** (for cloning)
 
 ### Quick Start
 
-```console
+```bash
 # Clone the repository
 git clone https://github.com/elyse502/crud-exercise.git
 
@@ -183,12 +218,9 @@ cd crud-exercise
 
 # Install dependencies
 npm install
-
-# Set up environment (if needed)
-cp .env.example .env  # Optional: configure port
 ```
 
-### Environment Variables (Optional)
+### Environment Configuration (Optional)
 
 Create a `.env` file in the root directory:
 
@@ -203,45 +235,51 @@ NODE_ENV=development
 
 ### Development Mode (with auto-reload)
 
-```console
+```bash
 npm run dev
 ```
 
-> Uses `ts-node-dev` for hot reloading during development
+> Uses `nodemon` for hot reloading during development
+> Server runs at: `http://localhost:3000`
 
-### Build for Production
+### Production Build
 
-```console
+```bash
 npm run build
 ```
 
 > Compiles TypeScript to JavaScript in the `dist/` folder
 
-### Run Production Build
+### Production Start
 
-```console
+```bash
 npm start
 ```
 
-> Runs the compiled JavaScript from the `dist/` folder
+> Runs the compiled JavaScript from `dist/` folder
 
 ---
 
-## 📡 API Endpoints
+## 📡 REST API Endpoints
 
 **Base URL:** `http://localhost:3000/api/items`
 
----
+| Method     | Endpoint         | Description          | Response            |
+| ---------- | ---------------- | -------------------- | ------------------- |
+| **GET**    | `/api/items`     | Fetch all items      | Array of items      |
+| **POST**   | `/api/items`     | Create new item      | Created item object |
+| **PUT**    | `/api/items/:id` | Update existing item | Updated item object |
+| **DELETE** | `/api/items/:id` | Delete item          | Success message     |
 
-### 📥 GET All Items
+### Example API Requests
 
-Retrieve all items from the database.
+#### 📥 GET All Items
 
-```http
-GET /api/items
+```bash
+curl http://localhost:3000/api/items
 ```
 
-#### Response (200 OK)
+**Response:**
 
 ```json
 [
@@ -249,236 +287,226 @@ GET /api/items
     "id": "550e8400-e29b-41d4-a716-446655440000",
     "name": "Laptop",
     "price": 1200
-  },
-  {
-    "id": "550e8400-e29b-41d4-a716-446655440001",
-    "name": "Mouse",
-    "price": 25
   }
 ]
 ```
 
----
+#### 📤 POST Create Item
 
-### 📤 POST Create Item
-
-Add a new item to the database.
-
-```http
-POST /api/items
+```bash
+curl -X POST http://localhost:3000/api/items \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Laptop","price":1200}'
 ```
 
-#### Request Body
-
-```json
-{
-  "name": "Laptop",
-  "price": 1200
-}
-```
-
-#### Response (201 Created)
+**Response:**
 
 ```json
 {
   "message": "Item created successfully",
   "data": {
-    "id": "550e8400-e29b-41d4-a716-446655440002",
+    "id": "generated-uuid",
     "name": "Laptop",
     "price": 1200
   }
 }
 ```
 
----
+#### 📝 PUT Update Item
 
-### 📝 PUT Update Item
-
-Update an existing item by ID.
-
-```http
-PUT /api/items/:id
+```bash
+curl -X PUT http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440000 \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Gaming Laptop","price":1500}'
 ```
 
-#### Request Body
+#### 🗑️ DELETE Item
 
-```json
-{
-  "name": "Gaming Laptop",
-  "price": 1500
-}
-```
-
-#### Response (200 OK)
-
-```json
-{
-  "message": "Item updated successfully",
-  "data": {
-    "id": "550e8400-e29b-41d4-a716-446655440002",
-    "name": "Gaming Laptop",
-    "price": 1500
-  }
-}
-```
-
-#### Error Response (404 Not Found)
-
-```json
-{
-  "message": "Item not found"
-}
+```bash
+curl -X DELETE http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440000
 ```
 
 ---
 
-### 🗑️ DELETE Remove Item
+## 🌐 Web Interface
 
-Delete an item from the database by ID.
+### Access the Application
 
-```http
-DELETE /api/items/:id
+Open your browser and navigate to:
+
+```
+http://localhost:3000
 ```
 
-#### Response (200 OK)
+### Page Previews
 
-```json
-{
-  "message": "Item deleted successfully"
-}
-```
+| Page                        | Description                         | Actions            |
+| --------------------------- | ----------------------------------- | ------------------ |
+| **Dashboard** (`/`)         | View all items in a responsive grid | Edit ✏️, Delete 🗑️ |
+| **Create Item** (`/create`) | Fill form to add new item           | Submit ➕          |
+| **Edit Item** (`/edit/:id`) | Modify existing item details        | Update 💾          |
 
-#### Error Response (404 Not Found)
+### UI Features Showcase
 
-```json
-{
-  "message": "Item not found"
-}
+- ✅ **Clean dashboard** with item cards
+- ✅ **Create form** with validation
+- ✅ **Edit form** with pre-filled values
+- ✅ **Delete confirmation** to prevent accidents
+- ✅ **Responsive design** works on all devices
+- ✅ **Consistent layout** with partials
+- ✅ **Visual feedback** with hover effects
+
+---
+
+## 🧪 Testing Guide
+
+### Test Using Browser UI
+
+1. **Create:** Visit `/create` → Fill form → Submit
+2. **Read:** Visit `/` → View all items
+3. **Update:** Click "Edit" on any item → Modify → Submit
+4. **Delete:** Click "Delete" → Confirm deletion
+
+### Test Using Postman/Thunder Client
+
+| Tool               | Instructions                                 |
+| ------------------ | -------------------------------------------- |
+| **Postman**        | Import collection or test endpoints manually |
+| **Thunder Client** | VS Code extension for quick testing          |
+| **Insomnia**       | Cross-platform API client                    |
+| **cURL**           | Command-line testing                         |
+
+### Sample Test Flow
+
+```bash
+# 1. Create an item
+curl -X POST http://localhost:3000/api/items \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Test Item","price":100}'
+
+# 2. Get all items
+curl http://localhost:3000/api/items
+
+# 3. Update the item (use the ID from step 1)
+curl -X PUT http://localhost:3000/api/items/[ID] \
+  -H "Content-Type: application/json" \
+  -d '{"name":"Updated Item","price":150}'
+
+# 4. Delete the item
+curl -X DELETE http://localhost:3000/api/items/[ID]
 ```
 
 ---
 
 ## 📊 HTTP Status Codes
 
-| Status Code | Meaning         | Usage                                      |
-| ----------- | --------------- | ------------------------------------------ |
-| **200**     | ✅ Success      | GET, PUT, DELETE successful operations     |
-| **201**     | 🆕 Created      | POST successful resource creation          |
-| **400**     | ❌ Bad Request  | Invalid request body or missing fields     |
-| **404**     | 🔍 Not Found    | Resource with given ID doesn't exist       |
-| **500**     | 💥 Server Error | Internal server error or file system issue |
+| Status Code | Meaning         | When it occurs                         |
+| ----------- | --------------- | -------------------------------------- |
+| **200**     | ✅ OK           | GET, PUT, DELETE successful            |
+| **201**     | 🆕 Created      | POST successful resource creation      |
+| **400**     | ❌ Bad Request  | Invalid request body or missing fields |
+| **404**     | 🔍 Not Found    | Item with given ID doesn't exist       |
+| **500**     | 💥 Server Error | File system or internal server error   |
 
 ---
 
-## 🧹 Separation of Concerns
+## 🎯 Key Implementation Details
 
-The project follows a clean architecture with distinct layers:
+### Method Override for HTML Forms
 
-| Layer           | Responsibility                                       | Files                |
-| --------------- | ---------------------------------------------------- | -------------------- |
-| **Routes**      | API endpoint definitions & HTTP method mapping       | `item.routes.ts`     |
-| **Controllers** | Request/response handling, validation, status codes  | `item.controller.ts` |
-| **Services**    | Business logic, CRUD operations, data transformation | `item.service.ts`    |
-| **Utils**       | Reusable helpers (file operations, ID generation)    | `fileHandler.ts`     |
-| **Types**       | TypeScript interfaces & type definitions             | `item.types.ts`      |
+HTML forms only support GET and POST methods. To support PUT and DELETE:
 
-### Benefits of this architecture:
-
-- ✅ **Maintainability** - Easy to locate and update code
-- ✅ **Testability** - Each layer can be tested independently
-- ✅ **Scalability** - Add new features without breaking existing code
-- ✅ **Reusability** - Services and utils can be reused across modules
-
----
-
-## 📦 NPM Scripts
-
-```json
-{
-  "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js"
-  }
-}
+```html
+<!-- In edit.ejs form -->
+<input type="hidden" name="_method" value="PUT" />
 ```
 
-| Script          | Description                                |
-| --------------- | ------------------------------------------ |
-| `npm run dev`   | Starts development server with auto-reload |
-| `npm run build` | Compiles TypeScript to JavaScript          |
-| `npm start`     | Runs production build                      |
+```javascript
+// In server.ts
+import methodOverride from "method-override";
+app.use(methodOverride("_method"));
+```
 
----
+### EJS Template Structure
 
-## 🧪 Testing with Postman
+```ejs
+<!-- header.ejs - Shared navigation -->
+<header>...</header>
 
-You can test all CRUD endpoints using:
+<!-- index.ejs - Dashboard -->
+<%- include('partials/header') %>
+<div class="container">...</div>
+<%- include('partials/footer') %>
+```
 
-| Tool                                                                                                        | Description               |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------- |
-| ![Postman](https://img.shields.io/badge/Postman-FF6C37?logo=postman&logoColor=white)                        | Desktop API testing tool  |
-| ![Thunder Client](https://img.shields.io/badge/Thunder_Client-FF6C37?logo=visualstudiocode&logoColor=white) | VS Code extension         |
-| ![Insomnia](https://img.shields.io/badge/Insomnia-4000BF?logo=insomnia&logoColor=white)                     | Cross-platform API client |
-| ![cURL](https://img.shields.io/badge/cURL-073551?logo=curl&logoColor=white)                                 | Command-line tool         |
+### Data Persistence with JSON
 
-### Example cURL Commands
+```typescript
+// fileHandler.ts
+export const readData = async (): Promise<Item[]> => {
+  const data = await fs.readFile(filePath, "utf-8");
+  return JSON.parse(data);
+};
 
-```console
-# GET all items
-curl http://localhost:3000/api/items
-
-# POST create item
-curl -X POST http://localhost:3000/api/items \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Laptop","price":1200}'
-
-# PUT update item
-curl -X PUT http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440000 \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Gaming Laptop","price":1500}'
-
-# DELETE item
-curl -X DELETE http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440000
+export const writeData = async (data: Item[]): Promise<void> => {
+  await fs.writeFile(filePath, JSON.stringify(data, null, 2));
+};
 ```
 
 ---
 
-## 🔮 Future Enhancements
+## 🔮 Future Roadmap
 
-- [ ] 🗄️ **Database Integration** - Migrate from JSON to PostgreSQL/MongoDB
-- [ ] 🔐 **Authentication** - JWT-based user authentication
-- [ ] 🛡️ **Validation** - Add Zod or Joi for request validation
-- [ ] 📝 **Logging** - Implement Winston or Morgan for request logging
-- [ ] 🧪 **Testing** - Add unit & integration tests with Jest
-- [ ] 📚 **API Documentation** - Integrate Swagger/OpenAPI
-- [ ] 🚦 **Rate Limiting** - Prevent abuse with express-rate-limit
-- [ ] 🔄 **Pagination** - Add pagination for GET endpoints
-- [ ] 🔍 **Search & Filter** - Implement query parameters for filtering
-- [ ] 📎 **File Upload** - Support for image/file attachments
+| Feature                     | Priority | Description                             |
+| --------------------------- | -------- | --------------------------------------- |
+| 🗄️ **Database Integration** | High     | Migrate from JSON to PostgreSQL/MongoDB |
+| 🔐 **Authentication**       | High     | JWT-based user authentication           |
+| 🛡️ **Input Validation**     | Medium   | Add Zod or Joi for request validation   |
+| 🧪 **Testing Suite**        | Medium   | Unit & integration tests with Jest      |
+| 📚 **API Documentation**    | Medium   | Swagger/OpenAPI integration             |
+| 🐳 **Docker Support**       | Low      | Containerize the application            |
+| 🚦 **Rate Limiting**        | Low      | Prevent API abuse                       |
+| 🔄 **CI/CD Pipeline**       | Low      | Automated deployment                    |
+| 📱 **Mobile App**           | Low      | React Native mobile client              |
+
+---
+
+## 🐛 Troubleshooting
+
+| Issue                             | Solution                                                    |
+| --------------------------------- | ----------------------------------------------------------- |
+| **Port already in use**           | Change PORT in `.env` or kill process using `lsof -i :3000` |
+| **TypeScript compilation errors** | Run `npm run build` to see detailed errors                  |
+| **Data not persisting**           | Check write permissions for `/data` folder                  |
+| **Method Override not working**   | Ensure `_method` hidden field is present in forms           |
 
 ---
 
 ## 👨‍💻 Author
 
-[**Elysée NIYIBIZI**](https://elyseedev.netlify.app)
+### **Elysée NIYIBIZI**
 
 _Junior Fullstack Software Engineer_
 
-[![GitHub](https://img.shields.io/badge/GitHub-elyse502-181717?logo=github&logoColor=white)](https://github.com/elyse502)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Elysée_NIYIBIZI-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/niyibizi-elysée)
-[![Email](https://img.shields.io/badge/Email-elyseniyibizi502@gmail.com-D14836?logo=gmail&logoColor=white)](mailto:elyseniyibizi502@gmail.com)
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-elyseedev.netlify.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://elyseedev.netlify.app)
+[![GitHub](https://img.shields.io/badge/GitHub-elyse502-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/elyse502)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Niyibizi_Elysée-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/niyibizi-elysée)
+[![Email](https://img.shields.io/badge/Email-elyseniyibizi502@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:elyseniyibizi502@gmail.com)
+
+</div>
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/elyse502/crud-exercise/blob/main/LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-```groovy
+```
 MIT License
 
-Copyright (c) 2026 Elysée NIYIBIZI
+Copyright (c) 2024 Elysée NIYIBIZI
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -487,16 +515,24 @@ in the Software without restriction...
 
 ---
 
-<div align="center">
+## 🙏 Acknowledgments
 
-### ⭐ Star this repository if you find it helpful for learning backend development!
-
-**Built with 💻, TypeScript, and Clean Architecture**
+- **Express.js** - Robust web framework
+- **TypeScript** - Type safety and better DX
+- **EJS** - Simple templating
+- **Tailwind CSS** - Rapid UI development
+- **Method Override** - RESTful form support
 
 ---
 
-_Questions or suggestions? Open an issue or reach out!_
+<div align="center">
 
-[⬆ Back to Top](#-table-of-contents)
+### ⭐ Star this repository if it helped you learn full-stack development!
+
+**Built with 💻, TypeScript, and Server-Side Rendering**
+
+---
+
+_Have questions or suggestions? Open an issue or reach out!_
 
 </div>
