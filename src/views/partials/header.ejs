@@ -10,6 +10,17 @@
     <title>
       <%= typeof title !== 'undefined' ? title : 'CRUD Dashboard' %>
     </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
 
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
@@ -44,7 +55,7 @@
     </header>
 
     <main class="flex-1">
-      <div class="max-w-5xl mx-auto px-4 py-8"><%- body %></div>
+      <div class="max-w-5xl mx-auto px-4 py-8"></div>
     </main>
   </body>
 </html>
