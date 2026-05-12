@@ -18,6 +18,12 @@ A production-ready full-stack CRUD application with server-side rendering, RESTf
 ![Method Override](https://img.shields.io/badge/Method_Override-HTTP-FFA500?style=flat-square&logo=html5&logoColor=white)
 ![File System](https://img.shields.io/badge/File_System-Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 
+## 🚀 Live Demo
+
+| Dashboard Page                            | Create Page                                   |
+| ----------------------------------------- | --------------------------------------------- |
+| ![Dashboard-Page](./assets/dashboard.png) | ![Create-Page](./assets/create-item-form.png) |
+
 </div>
 
 ---
