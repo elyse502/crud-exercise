@@ -20,7 +20,7 @@ A production-ready full-stack CRUD application with server-side rendering, RESTf
 
 ## 🚀 Live Demo
 
-| Dashboard Page                            | Create Page                                   |
+| Dashboard Page                            | Item Creation Page                            |
 | ----------------------------------------- | --------------------------------------------- |
 | ![Dashboard-Page](./assets/dashboard.png) | ![Create-Page](./assets/create-item-form.png) |
 
@@ -88,7 +88,7 @@ A production-ready full-stack CRUD application with server-side rendering, RESTf
 
 The application follows a **clean layered architecture** with clear separation between API and UI concerns:
 
-```
+```console
 ┌─────────────────────────────────────────────────────────────────┐
 │                         Client Browser                          │
 │                    (Web UI or API Client)                       │
@@ -139,7 +139,7 @@ The application follows a **clean layered architecture** with clear separation b
 
 ## 📁 Project Structure
 
-```
+```console
 crud-exercise/
 │
 ├── 📁 src/
@@ -215,7 +215,7 @@ crud-exercise/
 
 ### Quick Start
 
-```bash
+```console
 # Clone the repository
 git clone https://github.com/elyse502/crud-exercise.git
 
@@ -241,7 +241,7 @@ NODE_ENV=development
 
 ### Development Mode (with auto-reload)
 
-```bash
+```console
 npm run dev
 ```
 
@@ -250,7 +250,7 @@ npm run dev
 
 ### Production Build
 
-```bash
+```console
 npm run build
 ```
 
@@ -258,7 +258,7 @@ npm run build
 
 ### Production Start
 
-```bash
+```console
 npm start
 ```
 
@@ -281,7 +281,7 @@ npm start
 
 #### 📥 GET All Items
 
-```bash
+```console
 curl http://localhost:3000/api/items
 ```
 
@@ -299,7 +299,7 @@ curl http://localhost:3000/api/items
 
 #### 📤 POST Create Item
 
-```bash
+```console
 curl -X POST http://localhost:3000/api/items \
   -H "Content-Type: application/json" \
   -d '{"name":"Laptop","price":1200}'
@@ -320,7 +320,7 @@ curl -X POST http://localhost:3000/api/items \
 
 #### 📝 PUT Update Item
 
-```bash
+```console
 curl -X PUT http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440000 \
   -H "Content-Type: application/json" \
   -d '{"name":"Gaming Laptop","price":1500}'
@@ -328,7 +328,7 @@ curl -X PUT http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440000
 
 #### 🗑️ DELETE Item
 
-```bash
+```console
 curl -X DELETE http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440000
 ```
 
@@ -340,7 +340,7 @@ curl -X DELETE http://localhost:3000/api/items/550e8400-e29b-41d4-a716-446655440
 
 Open your browser and navigate to:
 
-```
+```console
 http://localhost:3000
 ```
 
@@ -384,7 +384,7 @@ http://localhost:3000
 
 ### Sample Test Flow
 
-```bash
+```console
 # 1. Create an item
 curl -X POST http://localhost:3000/api/items \
   -H "Content-Type: application/json" \
@@ -507,12 +507,12 @@ _Junior Fullstack Software Engineer_
 
 ## 📄 License
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License** - see the [LICENSE](https://github.com/elyse502/crud-exercise/blob/ft/ejs-integration/LICENSE) file for details.
 
 ```
 MIT License
 
-Copyright (c) 2024 Elysée NIYIBIZI
+Copyright (c) 2026 Elysée NIYIBIZI
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
