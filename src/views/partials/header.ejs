@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CRUD dashboard built with Node.js, Express, TypeScript, and EJS"
+    />
+    <title>
+      <%= typeof title !== 'undefined' ? title : 'CRUD Dashboard' %>
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+    <header class="bg-white shadow-sm border-b">
+      <div class="max-w-5xl mx-auto px-4 py-4">
+        <div class="flex items-center justify-between">
+          <a
+            href="/"
+            class="text-2xl font-bold text-blue-600 hover:text-blue-700"
+          >
+            CRUD Dashboard
+          </a>
+
+          <nav class="flex items-center gap-3">
+            <a
+              href="/"
+              class="px-3 py-2 rounded-lg text-sm font-medium text-gray-700 hover:bg-gray-100"
+            >
+              Home
+            </a>
+
+            <a
+              href="/create"
+              class="px-4 py-2 rounded-lg bg-blue-600 text-white text-sm font-medium hover:bg-blue-700"
+            >
+              Add Item
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1">
+      <div class="max-w-5xl mx-auto px-4 py-8"></div>
+    </main>
+  </body>
+</html>
